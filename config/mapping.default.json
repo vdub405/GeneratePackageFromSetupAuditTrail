@@ -1,0 +1,52 @@
+{
+  "sectionRegexMappings": [
+    {
+      "sectionRegex": "^Custom Objects$",
+      "types": ["CustomObject", "Layout", "QuickAction"]
+    },
+    {
+      "sectionRegex": "^Customize Activities$",
+      "types": ["CustomObject", "Layout", "RecordType", "StandardValueSet"]
+    },
+    {
+      "sectionRegex": "^Customize Accounts$",
+      "types": ["CustomObject", "Layout", "RecordType"]
+    },
+    {
+      "sectionRegex": "^Lightning Pages$",
+      "types": ["FlexiPage"]
+    },
+    {
+      "sectionRegex": "^Global Actions$",
+      "types": ["QuickAction"]
+    },
+    {
+      "sectionRegex": "^Custom Tabs$",
+      "types": ["CustomTab"]
+    },
+    {
+      "sectionRegex": "^Custom Apps$",
+      "types": ["CustomApplication"]
+    },
+    {
+      "sectionRegex": "^Matching Rule$",
+      "types": ["MatchingRules", "DuplicateRule"]
+    },
+    {
+      "sectionRegex": "^Standard Buttons and Links$",
+      "types": ["CustomObject"]
+    }
+  ],
+  "conditionalMappings": [
+    {
+      "sectionRegex": "^Manage Users$",
+      "actionRegex": "^(Changed|Created) profile ",
+      "types": ["Profile"]
+    },
+    {
+      "sectionRegex": "^Manage Users$",
+      "actionRegex": "^(Changed|Created) permission set ",
+      "types": ["PermissionSet"]
+    }
+  ]
+}
